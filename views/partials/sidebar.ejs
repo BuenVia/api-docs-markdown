@@ -1,0 +1,10 @@
+<div>
+    <p>Sidebar</p>
+    <ul>
+        <% categories.forEach(cat => { %>
+            <li>
+                <a href='/api-calls/<%= cat.id %>'><%= cat.category_name %></a>    
+            </li>
+        <% }) %>
+        </ul>
+</div>

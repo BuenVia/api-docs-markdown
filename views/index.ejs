@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="main-container">
+
+    <div class="sidebar">
+        <%- include('partials/sidebar') %>
+    </div>
+    
+    <div class="main">
+        <p>Main Body</p>
+        <% calls.forEach(call => { %>
+            <div style="display: flex; flex-direction: row; padding: .5em;" >
+                <p><%= call.id %></p>
+                <p><%= call.title %></p>
+                <p><%= call.category_id %></p>
+                <p><%= call.category_name %></p>
+            </div>
+        <% }) %>
+    </div>
+
+</div>
+
+<%- include('partials/footer') %>
